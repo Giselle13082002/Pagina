@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORERIA LAS 4 ESTACIONES</title>
+</head>
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f3ea;
+}
+
+.wrap {
+  width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  box-pack: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.tarjeta-wrap {
+  margin: 10px;
+  perspective: 800;
+  perspective: 800;
+}
+
+.tarjeta {
+  width: 300px;
+  height: 350px;
+  background: #72be0f;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante,
+.atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.adelante {
+  width: 100%;
+}
+
+.atras {
+  transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  padding: 15px;
+  display: flex;
+  box-pack: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  text-align: center;
+  color: rgb(17, 17, 17);
+  font-family: "open sans";
+  background: #72be0f;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+  transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card1 {
+  background-size: cover;
+}
+.card2 {
+  background-size: cover;
+}
+.card3 {
+  background-size: cover;
+}
+.card4 {
+  background-size: cover;
+}
+.card5 {
+  background-size: cover;
+}
+.card6 {
+  background-size: cover;
+}
+.card7 {
+  background-size: cover;
+}
+.card8 {
+  background-size: cover;
+}
+.card9 {
+  background-size: cover;
+}
+.card10 {
+  background-size: cover;
+}
+.card11 {
+  background-size: cover;
+}
+.card12 {
+  background-size: cover;
+}
+
+/*boton regresar*/
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado1{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado1:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  } 
+  
+  .boton_personalizado2{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado2:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado3{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado3:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado4{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado4:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado5{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado5:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado6{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado6:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado7{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado7:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado8{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado8:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado9{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado9:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado10{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado10:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado11{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado11:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+  .boton_personalizado12{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 10;
+    font-size: 20px;
+    color: #080808;
+    background-color: #1e8604;
+    border-radius: 10px;
+    border: 2px solid #048654;
+  }
+  .boton_personalizado12:hover{
+    color: #38d39f;
+    background-color: #ffffff;
+  }  
+
+</style>
+<body>
+    <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card1">
+          <img src="https://www.estrenocasa.com/wp-content/uploads/2018/11/cactus-de-navidad.jpg"width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>Cactus de Navidad
+            L.350.00
+          </p>
+          <a href="Pedido_Flores1.htm" class="boton_personalizado1">Comprar</a>
+				</div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card2">
+                    <img src="https://casaydiseno.com/wp-content/uploads/2016/11/plantas-decorativas-de-interior-salon.jpg"width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>La Bromelia plantada en una maceta para la decoración de vuestro salón
+          L.450.00
+          </p>
+          <a href="Pedido_Flores2.htm" class="boton_personalizado2">Comprar</a>
+				</div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card3">
+                    <img src="https://casaydiseno.com/wp-content/uploads/2016/11/plantas-de-interior-con-flor-decorar-sala-de-estar.jpg" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>La azalea, un arbusto de flor para interior en invierno
+             L.1000.00
+          </p>
+          <a href="Pedido_Flores3.htm" class="boton_personalizado3">Comprar</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+  <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card4">
+                    <img src="https://www.jardinedia.com/wp-content/uploads/2018/01/1024_2000-5.jpg" width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>Aloe Vera
+            L.550.00
+          </p>
+          <a href="Pedido_Planta4.htm" class="boton_personalizado4">Comprar</a>
+				</div>
+			</div>
+		</div>
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card5">
+                    <img src="https://i0.wp.com/lechatmagazine.com/wp-content/uploads/2020/04/plantas-cactus.jpg?resize=640%2C427&ssl=1" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>CACTUS
+             L.150.00
+          </p>
+          <a href="Pedido_Planta5.htm" class="boton_personalizado5">Comprar</a>
+				</div>
+			</div>
+		</div>
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card6">
+                    <img src="https://i1.wp.com/lechatmagazine.com/wp-content/uploads/2020/04/plantas-sabila.jpg?resize=642%2C426&ssl=1" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>SÁBILA
+             L850.00
+          </p>
+          <a href="Pedido_Planta6.htm" class="boton_personalizado6">Comprar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card7">
+                    <img src="https://www.estrenocasa.com/wp-content/uploads/2018/11/tronco-de-brasil.jpg" width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>Tronco de Brasil 
+            L.1500.00
+          </p>
+          <a href="Pedido_Planta7.htm" class="boton_personalizado7">Comprar</a>
+				</div>
+			</div>
+		</div> 
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card8">
+                    <img src="https://www.estrenocasa.com/wp-content/uploads/2018/11/palmera-de-salon.jpg"width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>Palmera de Salón
+          L.950.00
+          </p>
+          <a href="Pedido_Planta8.htm" class="boton_personalizado8">Comprar</a>
+				</div>
+			</div>
+		</div>
+    <div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card9">
+                    <img src="https://www.estrenocasa.com/wp-content/uploads/2018/11/dracena.jpg" width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>Drácena de Hoja Fina
+             L.1400.00
+          </p>
+          <a href="Pedido_Planta9.htm" class="boton_personalizado9">Comprar</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+  <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card10">
+          <img src="https://i2.wp.com/lechatmagazine.com/wp-content/uploads/2020/04/plantas-monstera.jpg?resize=542%2C542&ssl=1"width="300px" height="350px"> 
+                </div>
+				<div class="atras">
+					<p>MONSTERA
+            L.950.00
+          </p>
+          <a href="Pedido_Planta10.htm" class="boton_personalizado10">Comprar</a>
+				</div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card2">
+                    <img src="https://casaydiseno.com/wp-content/uploads/2016/11/ploantas-de-interior-con-flor-sala-de-estar.jpg"width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>Lirios rosas en una maceta para decorar en invierno
+          L.450.00
+          </p>
+          <a href="Pedido_Planta11.htm" class="boton_personalizado11">Comprar</a>
+				</div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card3">
+                    <img src="https://casaydiseno.com/wp-content/uploads/2016/11/plantas-de-interior-con-flor-decoracion.jpg"width="300px" height="350px">
+                </div>
+				<div class="atras">
+					<p>Unas orquideas para la decoración del interior 
+             L.1000.00
+          </p>
+          <a href="Pedido_Planta12.htm" class="boton_personalizado12">Comprar</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+  <a href="floristeria 2.html" class="boton_personalizado">Regresar</a> 
+</body> 
+</html>
